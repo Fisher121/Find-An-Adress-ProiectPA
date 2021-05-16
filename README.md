@@ -3,7 +3,11 @@
 #TODO
 
 -client
+
 -server spring application
+
 -api
+
 -algoritm corectare adresa
+
 -DATABASE(DAO/REPOSITORY)
