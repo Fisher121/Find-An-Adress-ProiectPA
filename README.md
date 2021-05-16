@@ -1,13 +1,9 @@
 # Find-An-Adress-ProiectPA
 
-#TODO
+### TODO
 
--client
-
--server spring application
-
--api
-
--algoritm corectare adresa
-
--DATABASE(DAO/REPOSITORY)
+- [ ] client
+- [ ] server spring application
+- [ ] api
+- [ ] algoritm corectare adresa
+- [ ] DATABASE(DAO/REPOSITORY)
