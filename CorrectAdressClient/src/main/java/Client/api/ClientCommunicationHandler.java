@@ -14,7 +14,7 @@ public class ClientCommunicationHandler {
     static private String host = "http://localhost:8010";
 
     public static JSONObject getAdress(String city, String state, String country){
-        String tempurl = host + "/api/adress/correct/"+country+"/"+state+"/"+city;
+        String tempurl = host + "/api/adress/correct/" + country + "/" + state + "/" + city;
        tempurl = tempurl.replaceAll("\\s","~");
 
         return getRequest(tempurl);
@@ -24,27 +24,16 @@ public class ClientCommunicationHandler {
         JSONObject response = null;
         HttpURLConnection connection = null;
         try {
-
-
-
             URL url = new URL(URL);
-
             connection = (HttpURLConnection) url.openConnection();
-
             connection.setRequestMethod("GET");
-
             response = new JSONObject(readFromConnection(connection));
-
-
-
-
         }catch (Exception e){
             response = new JSONObject();
-            response.append("Error!","Error on the client side contact the admin!");
+            response.append("Error!","Error on the client side ! Contact the admin!");
             response.append("Error!!",e.getCause());
             e.printStackTrace();
-        }
-        finally {
+        } finally {
             connection.disconnect();
             return response;
         }
@@ -66,6 +55,7 @@ public class ClientCommunicationHandler {
         for(String key : jsonObject.keySet()){
             if(count!=0)
                 tempString.append(",");
+
             tempString.append("\"");
             tempString.append(key);
             tempString.append("\"");

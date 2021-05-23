@@ -16,19 +16,19 @@ public class AdressController {
     }
 
     @GetMapping("correct/{country}/{state}/{city}")
-    public Adress  correct(@PathVariable("country")String country,
+    public Adress correct(@PathVariable("country")String country,
                            @PathVariable("state")String state,
                            @PathVariable("city")String city){
         country = country.replaceAll("~"," ");
         state = state.replaceAll("~"," ");
         city = city.replaceAll("~"," ");
-        Adress adress= new Adress(country,city,state);
+        Adress adress= new Adress(country,state, city);
         System.out.println(adress);
         return adressService.correct(adress);
     }
 
     @GetMapping("correct")
-    public Adress  correct(@RequestBody Adress adress){
+    public Adress correct(@RequestBody Adress adress){
         System.out.println(adress.toString());
         return adressService.correct(adress);
     }

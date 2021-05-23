@@ -1,15 +1,14 @@
 package com.project.CorrectAnAdressServer.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import org.springframework.data.jpa.repository.Query;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
+import java.io.Serializable;
 
 @Entity
 @Table(name = "orase")
-public class Adress {
+public class Adress{
 
     @Id
     public Integer ID;
@@ -28,21 +27,13 @@ public class Adress {
     }
     public Adress(){}
 
-    public String getCity() {
-        return city;
-    }
-
-    public String getCountry() {
-        return country;
-    }
-
-    public String getState() {
-        return state;
-    }
+    public String getCity() { return city; }
+    public String getCountry() { return country; }
+    public String getState() { return state; }
 
     @Override
     public String toString() {
-        return "Adress{" +
+        return "Address{" +
                 "country='" + country + '\'' +
                 ", state='" + state + '\'' +
                 ", city='" + city + '\'' +
