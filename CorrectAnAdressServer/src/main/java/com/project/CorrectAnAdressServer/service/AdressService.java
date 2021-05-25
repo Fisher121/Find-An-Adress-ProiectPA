@@ -3,7 +3,6 @@ package com.project.CorrectAnAdressServer.service;
 import com.project.CorrectAnAdressServer.model.Adress;
 import com.project.CorrectAnAdressServer.repository.AdressRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -18,26 +17,42 @@ public class AdressService {
     }
 
     public Adress correct(Adress adress) {
-        List<Adress> locationsList = adressRepository.findByCity(adress.getCity());
+        sanitize(adress);
+        List<Adress> cityLocationList = adressRepository.findByCity(adress.getCity());
 
-        if (locationsList.isEmpty()) {
-            return new Adress("Invalid data", "Invalid data", "Invalid data");
-        } else if (locationsList.size() == 1) {
-            return locationsList.get(0);
+        if (cityLocationList.isEmpty()) {
+            List<Adress> stateLocationList = adressRepository.findByState(adress.getState());
+            List<Adress> countryLocationList = adressRepository.findByCountry(adress.getCountry());
+
+            String country = "Need more information.";
+            String state = "Need more information.";
+            String city = "Need more information.";
+            if (!stateLocationList.isEmpty()) {
+                country = stateLocationList.get(0).getCountry();
+                state = stateLocationList.get(0).getState();
+            }else if (!countryLocationList.isEmpty()) {
+                country = countryLocationList.get(0).getCountry();
+            }
+
+            return new Adress(country, state, city);
+        } else if (cityLocationList.size() == 1) {
+            return cityLocationList.get(0);
         } else {
-            for (Adress location : locationsList) {
-
+            for (Adress location : cityLocationList) {
                 if (location.getState().equals(adress.getState()) &&
                         location.getCountry().equals(adress.getCountry())) {
-                    System.out.println(location.toString());
                     return location;
                 }
-
                 if (location.getState().equals(adress.getState()) || location.getCountry().equals(adress.getCountry()))
-                    return location;
+                    adress = location;
             }
         }
         return adress;
     }
 
+    public void sanitize(Adress adress) {
+        if (adress.getCity() == null) adress.setCity("Need more information");
+        if (adress.getState() == null) adress.setState("Need more information");
+        if (adress.getCountry() == null) adress.setCountry("Need more information");
+    }
 }

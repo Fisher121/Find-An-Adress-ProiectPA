@@ -13,10 +13,13 @@ import java.net.URL;
 public class ClientCommunicationHandler {
     static private String host = "http://localhost:8010";
 
-    public static JSONObject getAdress(String city, String state, String country){
-        String tempurl = host + "/api/adress/correct/" + country + "/" + state + "/" + city;
-       tempurl = tempurl.replaceAll("\\s","~");
+    public static JSONObject getAdress(String city, String state, String country) {
+        if (city == null) city = "city";
+        if (state == null) state = "state";
+        if (country == null) country = "country";
 
+        String tempurl = host + "/api/adress/correct/" + country + "/" + state + "/" + city;
+        tempurl = tempurl.replaceAll("\\s","~");
         return getRequest(tempurl);
     }
 

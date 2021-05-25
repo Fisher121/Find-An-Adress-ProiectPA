@@ -10,4 +10,10 @@ import java.util.List;
 public interface AdressRepository extends JpaRepository<Adress, String> {
     @Query(value = "SELECT * FROM orase o WHERE LOWER(o.city) = LOWER(:city)", nativeQuery = true)
     List<Adress> findByCity(@Param("city") String city);
+
+    @Query(value = "SELECT * FROM orase o WHERE LOWER(o.admin_name) = LOWER(:state)", nativeQuery = true)
+    List<Adress> findByState(@Param("state") String state);
+
+    @Query(value = "SELECT * FROM orase o WHERE LOWER(o.country) = LOWER(:country)", nativeQuery = true)
+    List<Adress> findByCountry(@Param("country") String state);
 }

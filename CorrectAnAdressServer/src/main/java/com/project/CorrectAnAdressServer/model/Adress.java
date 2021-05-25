@@ -31,6 +31,10 @@ public class Adress{
     public String getCountry() { return country; }
     public String getState() { return state; }
 
+    public void setCountry(String country) { this.country = country; }
+    public void setState(String state) { this.state = state; }
+    public void setCity(String city) { this.city = city; }
+
     @Override
     public String toString() {
         return "Address{" +
