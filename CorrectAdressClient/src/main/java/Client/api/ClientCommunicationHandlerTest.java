@@ -10,6 +10,7 @@ public class ClientCommunicationHandlerTest {
     private static JSONObject test2;
     private static JSONObject test3;
     private static JSONObject test4;
+    private static JSONObject test5;
 
     @BeforeAll()
     static void createObjects() {
@@ -17,6 +18,7 @@ public class ClientCommunicationHandlerTest {
         test2 = new JSONObject();
         test3 = new JSONObject();
         test4 = new JSONObject();
+        test5 = new JSONObject();
 
         test1.append("country", "United States");
         test1.append("state", "Kentucky");
@@ -33,6 +35,10 @@ public class ClientCommunicationHandlerTest {
         test4.append("country", "United States");
         test4.append("state", "Louisiana");
         test4.append("city", "Alexandria");
+
+        test5.append("country", "Romania");
+        test5.append("state", "Suceava");
+        test5.append("city", "Vicovu de Sus");
     }
 
     @Test
@@ -90,14 +96,25 @@ public class ClientCommunicationHandlerTest {
                         "}");
     }
 
-//    @Test
-//    void test6() {
-//        JSONObject result = ClientCommunicationHandler.getAdress("Alexandria", "", "");
-//        Assertions.assertEquals(test1.toString(),
-//                "{" +
-//                        "\"country\":" + "[\"" + result.get("country") + "\"]," +
-//                        "\"city\":" + "[\"" + result.get("city") + "\"]," +
-//                        "\"state\":" + "[\"" + result.get("state") + "\"]" +
-//                        "}");
-//    }
+    @Test
+    void test6() {
+        JSONObject result = ClientCommunicationHandler.getAdress("Vicovu de Sus", "", "");
+        Assertions.assertEquals(test5.toString(),
+                "{" +
+                        "\"country\":" + "[\"" + result.get("country") + "\"]," +
+                        "\"city\":" + "[\"" + result.get("city") + "\"]," +
+                        "\"state\":" + "[\"" + result.get("state") + "\"]" +
+                        "}");
+    }
+
+    @Test
+    void test7() {
+        JSONObject result = ClientCommunicationHandler.getAdress("Vicovu de Sus", "Bucharest", "Egypt");
+        Assertions.assertEquals(test5.toString(),
+                "{" +
+                        "\"country\":" + "[\"" + result.get("country") + "\"]," +
+                        "\"city\":" + "[\"" + result.get("city") + "\"]," +
+                        "\"state\":" + "[\"" + result.get("state") + "\"]" +
+                        "}");
+    }
 }
