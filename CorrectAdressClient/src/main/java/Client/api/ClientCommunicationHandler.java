@@ -1,6 +1,7 @@
 package Client.api;
 
 import org.json.JSONObject;
+import org.junit.jupiter.api.Test;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -13,9 +14,14 @@ import java.net.URL;
 public class ClientCommunicationHandler {
     static private String host = "http://localhost:8010";
 
+
     public static JSONObject getAdress(String city, String state, String country){
+        if  (city == null || city.isEmpty()) city = "c";
+        if  (state == null || state.isEmpty()) state = "c";
+        if  (country == null || country.isEmpty()) country = "c";
+
         String tempurl = host + "/api/adress/correct/" + country + "/" + state + "/" + city;
-       tempurl = tempurl.replaceAll("\\s","~");
+        tempurl = tempurl.replaceAll("\\s","~");
 
         return getRequest(tempurl);
     }

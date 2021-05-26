@@ -2,6 +2,7 @@ package com.project.CorrectAnAdressServer.service;
 
 import com.project.CorrectAnAdressServer.model.Adress;
 import com.project.CorrectAnAdressServer.repository.AdressRepository;
+import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -16,6 +17,18 @@ public class AdressService {
         this.adressRepository = adressRepository;
     }
 
+
+    /**
+     * Returns the correct form of an address.
+     * It takes firstly the city, and search in the database for all rows.
+     * If there is no city, it takes the state, and search in the database after state,
+     * If there is no state, it takes the country, and if is not correct, it is not displaying it
+     * If it receive a valid data, it will execute a query in the database.
+     * Then it search for the best match in the result set.
+     * If the input is empty or locations are not correct, it will send back 'need more information'
+     * @param adress an address containing of country, state and city
+     * @return the corrected address
+     */
     public Adress correct(Adress adress) {
         sanitize(adress);
         List<Adress> cityLocationList = adressRepository.findByCity(adress.getCity());
@@ -43,7 +56,9 @@ public class AdressService {
                         location.getCountry().equals(adress.getCountry())) {
                     return location;
                 }
-                if (location.getState().equals(adress.getState()) || location.getCountry().equals(adress.getCountry()))
+                if (location.getState().equals(adress.getState()))
+                    return location;
+                else if (location.getCountry().equals(adress.getCountry()))
                     adress = location;
             }
         }
@@ -51,8 +66,8 @@ public class AdressService {
     }
 
     public void sanitize(Adress adress) {
-        if (adress.getCity() == null) adress.setCity("Need more information");
-        if (adress.getState() == null) adress.setState("Need more information");
-        if (adress.getCountry() == null) adress.setCountry("Need more information");
+        if (adress.getCountry().equals("c")) adress.setCountry("Need more information");
+        if (adress.getState().equals("c")) adress.setState("Need more information");
+        if (adress.getCity().equals("c")) adress.setCity("Need more information");
     }
 }

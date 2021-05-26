@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d8613cf6-7976-4103-bdbf-6e1f3b9b929f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_13_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_annotations_13_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_kotlin_kotlin_stdlib_1_4_20.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_kotlin_kotlin_stdlib_common_1_4_20.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_kotlin_kotlin_stdlib_jdk7_1_4_20.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_kotlin_kotlin_stdlib_jdk8_1_4_20.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_json_json_20210307.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_5_8_0_M1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_8_0_M1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_8_0_M1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_8_0_M1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_8_0_M1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_8_0_M1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CorrectAnAdressServer/.idea/libraries/Maven__junit_junit_4_13_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CorrectAnAdressServer/.idea/libraries/Maven__org_hamcrest_hamcrest_core_2_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CorrectAdressClient.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CorrectAdressClient.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Client/api/ClientCommunicationHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Client/api/ClientCommunicationHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Client/Interface/ConfigPanel$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Client/Interface/ConfigPanel$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Client/Interface/ConfigPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Client/Interface/ConfigPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Client/Interface/ControlPanel$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Client/Interface/ControlPanel$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Client/Interface/ControlPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Client/Interface/ControlPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Client/Interface/FormPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Client/Interface/FormPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Client/Interface/Mainframe.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Client/Interface/Mainframe.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Client/Interface/ResultPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Client/Interface/ResultPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Client/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Client/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Client/api/ClientCommunicationHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Client/api/ClientCommunicationHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CorrectAnAdressServer/CorrectAnAdressServer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../CorrectAnAdressServer/CorrectAnAdressServer.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CorrectAnAdressServer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CorrectAnAdressServer/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CorrectAnAdressServer/src/main/java/com/project/CorrectAnAdressServer/service/AdressService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CorrectAnAdressServer/src/main/java/com/project/CorrectAnAdressServer/service/AdressService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CorrectAnAdressServer/src/test/java/com/project/CorrectAnAdressServer/CorrectAnAdressServerApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CorrectAnAdressServer/target/classes/com/project/CorrectAnAdressServer/service/AdressService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../CorrectAnAdressServer/target/classes/com/project/CorrectAnAdressServer/service/AdressService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CorrectAnAdressServer/target/test-classes/com/project/CorrectAnAdressServer/CorrectAnAdressServerApplicationTests.class" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="JUnit5 Test Class" />
+        <option value="JUnit4 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1sqIUv3SUNucKPmXdDFhuXrRkff" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="create.test.in.the.same.root" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../CorrectAnAdressServer" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.tabs" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="Client.api" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Client.Main" />
+      <module name="CorrectAdressClient" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Client.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ClientCommunicationHandlerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CorrectAdressClient" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Client.api.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Client.api" />
+      <option name="MAIN_CLASS_NAME" value="Client.api.ClientCommunicationHandlerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ClientCommunicationHandlerTest.test4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CorrectAdressClient" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Client.api.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Client.api" />
+      <option name="MAIN_CLASS_NAME" value="Client.api.ClientCommunicationHandlerTest" />
+      <option name="METHOD_NAME" value="test4" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ClientCommunicationHandlerTest.test5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CorrectAdressClient" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Client.api.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Client.api" />
+      <option name="MAIN_CLASS_NAME" value="Client.api.ClientCommunicationHandlerTest" />
+      <option name="METHOD_NAME" value="test5" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ClientCommunicationHandlerTest.test6" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CorrectAdressClient" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Client.api.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Client.api" />
+      <option name="MAIN_CLASS_NAME" value="Client.api.ClientCommunicationHandlerTest" />
+      <option name="METHOD_NAME" value="test6" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.ClientCommunicationHandlerTest.test6" />
+        <item itemvalue="JUnit.ClientCommunicationHandlerTest" />
+        <item itemvalue="JUnit.ClientCommunicationHandlerTest.test5" />
+        <item itemvalue="JUnit.ClientCommunicationHandlerTest.test4" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d8613cf6-7976-4103-bdbf-6e1f3b9b929f" name="Default Changelist" comment="" />
+      <created>1621593712876</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1621593712876</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/CorrectAdressClient$ClientCommunicationHandlerTest_test_1_city.ic" NAME="ClientCommunicationHandlerTest.test_1_city Coverage Results" MODIFIED="1622007812417" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>Client.api.*</FILTER>
+    </SUITE>
+  </component>
+</project>
