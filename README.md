@@ -2,8 +2,8 @@
 
 ### TODO
 
-- [ ] client
-- [ ] server spring application
-- [ ] api
-- [ ] algoritm corectare adresa
-- [ ] DATABASE(DAO/REPOSITORY)
+- [x] client
+- [x] server spring application
+- [x] api
+- [x] algoritm corectare adresa
+- [x] DATABASE(DAO/REPOSITORY)
