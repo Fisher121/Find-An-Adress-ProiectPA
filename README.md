@@ -17,3 +17,9 @@
 - localization and internationalization on the client side: all the labeles are translated according to the default locale
 - java swing: grafic interface of the client
 - testing: ClientCommunicationHandlerTest
+
+
+# Realizat de 
+
+- Ghiuzan Emanuel - Gabriel
+- Panzariu Iount - Adrian
